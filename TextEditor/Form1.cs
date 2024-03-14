@@ -103,5 +103,13 @@ namespace TextEditor
                 richTextBox1.ForeColor = colorDialog1.Color;
             }
         }
+
+        private void fontSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Font = fontDialog1.Font;
+            }
+        }
     }
 }
