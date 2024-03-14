@@ -95,5 +95,13 @@ namespace TextEditor
         {
             richTextBox1.Cut();
         }
+
+        private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.ForeColor = colorDialog1.Color;
+            }
+        }
     }
 }
